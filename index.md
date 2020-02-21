@@ -1,2 +1,2 @@
-# Welcome to mw8er.(dh|ch|github.io)
+# Welcome to mw8er
 under construction
