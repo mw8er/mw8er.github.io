@@ -14,19 +14,27 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: mw8er
-email: mail+github@mw8er.ch
+author: Michael Wachter
+email: michael.wachter@ipt.ch
 description: >- # this means to ignore newlines until "baseurl:"
-  This website is about mw8er.
+  This website is about Michael Wachter (mw8er).
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.mw8er.ch" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: jekyllrb
-#github_username:  jekyll
+
+# github_username:  mw8er
+linkedin_username: mw8er
+# twitter_username: mw8er
 
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+
+header_pages:
+  - about.md
+  # - portfolio.md
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
