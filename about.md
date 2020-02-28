@@ -9,5 +9,5 @@ What is the meaning of mw8er?
 - *w8er* is derived from my last name. In german *8* is written *acht*, so *w8er = wachter*
 
 Talking about my name ... it's Michael Wachter.
-I'm Principal Consultant at [Innovation Process Technology AG](https://www.ipt.ch) in Switzerland.
+I'm Principal Consultant at [Innovation Process Technology AG](https://www.ipt.ch){:target="_blank"} in Switzerland.
 
