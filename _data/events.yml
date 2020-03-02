@@ -1,0 +1,55 @@
+---
+- date: 2020-04-02
+  begin: "8:30"
+  end: "17:00"
+  title: Cloud Native Application Development and DevOps in Azure
+  location: >-
+    Microsoft Schweiz GmbH
+    Richtistrasse 3
+    8304 Wallisellen
+  link: https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x8976988abcd
+  description: >-
+    Microsoft Azure is a colorful universe of cloud services for every developer on every platform.
+    Are you looking into building new Cloud Native Applications in DevOps fashion or do you want to enrich existing applications?
+    If yes, you should pop in and join us for a full day of exciting content, hands-on and conversations.
+    Live demonstration on how these different services can be leverage.
+- date: 2020-05-14
+  begin: "8:30"
+  end: "17:00"
+  title: Cloud Native Application Development and DevOps in Azure
+  location: >-
+    Microsoft Schweiz GmbH
+    Richtistrasse 3
+    8304 Wallisellen
+  link: https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x8978508abcd
+  description: >-
+    Microsoft Azure is a colorful universe of cloud services for every developer on every platform.
+    Are you looking into building new Cloud Native Applications in DevOps fashion or do you want to enrich existing applications?
+    If yes, you should pop in and join us for a full day of exciting content, hands-on and conversations.
+    Live demonstration on how these different services can be leverage.
+- date: 2020-06-19
+  begin: "8:30"
+  end: "17:00"
+  title: Kubernetes on Azure Hands-on Lab
+  location: >-
+    Microsoft Schweiz GmbH
+    Richtistrasse 3
+    8304 Wallisellen
+  link: https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x8976988abcd
+  description: >-
+    In this hands-on workshop experienced Microsoft proctors will guide you through what it takes to run a container-based application
+    to a Kubernetes cluster running on Azure Kubernetes Service. This workshop requires each attendee to understand k8s on a basic level
+    as you work 90% of the time on your HoL on your own notebook / laptop.
+- date: 2020-04-17
+  begin: "8:30"
+  end: "17:00"
+  title: Kubernetes on Azure Hands-on Lab
+  location: >-
+    Microsoft Schweiz GmbH
+    Richtistrasse 3
+    8304 Wallisellen
+  link: https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x8976988abcd
+  description: >-
+    In this hands-on workshop experienced Microsoft proctors will guide you through what it takes to run a container-based application
+    to a Kubernetes cluster running on Azure Kubernetes Service. This workshop requires each attendee to understand k8s on a basic level
+    as you work 90% of the time on your HoL on your own notebook / laptop.

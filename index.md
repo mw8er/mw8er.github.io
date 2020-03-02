@@ -5,6 +5,9 @@
 # ![logo](/assets/img/logo-mw8er-thin.png)
 
 layout: home
+title: Welcome to mw8er
 ---
+
+# [Check out the events](/events/)
 
 **Work in Progress**

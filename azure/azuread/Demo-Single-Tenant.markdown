@@ -4,7 +4,7 @@ title:  "Demo: Single Tenant"
 categories: azure azuread
 ---
 
-<script src="{{ base.url }}/assets/js/msal.js"></script>
+<script src="{{ site.url }}/assets/js/msal.js"></script>
 
 <!-- importing app scripts | load order is important -->
 <script>
@@ -29,9 +29,9 @@ const loginRequest = {
 };
 
 </script>
-<script type="text/javascript" src="{{ base.url }}/assets/js/singleTenant/ui.js"></script>  
-<script type="text/javascript" src="{{ base.url }}/assets/js/singleTenant/auth.js"></script>
-<script type="text/javascript" src="{{ base.url }}/assets/js/singleTenant/graph.js"></script>
+<script type="text/javascript" src="{{ site.url }}/assets/js/singleTenant/ui.js"></script>  
+<script type="text/javascript" src="{{ site.url }}/assets/js/singleTenant/auth.js"></script>
+<script type="text/javascript" src="{{ site.url }}/assets/js/singleTenant/graph.js"></script>
 
 <h2 id="WelcomeMessage"></h2>
 <div>
@@ -44,5 +44,5 @@ const loginRequest = {
 ### ID Token
 <pre><code id="IdToken"></code></pre>
 
-### Access Token
-<pre><code id="AccessToken"></code></pre>
+<!-- ### Access Token
+<pre><code id="AccessToken"></code></pre> -->
