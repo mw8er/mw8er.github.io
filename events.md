@@ -6,19 +6,20 @@ permalink: /events/
 # Upcoming Events
 
 {% assign events = site.data.events | sort: "date" %}
-{% assign nowunix = 'now' | date: '%s' %}
+{% assign nowunix = 'today' | date: '%s' %}
 {% for event in events %}
 {% assign eventDate = event.date | date: '%s' %}
 
 {% if eventDate >= nowunix %}
-### <a href="{{ event.link }}" target="_blank">{{ event.title }}</a>
-<dl>
-  <dd>On {{ event.date }} from {{ event.begin }} to {{ event.end }}</dd>
-  <dd>{{ event.description }}</dd>
-  <dd>{{ nowunix }} vs {{ eventDate }}</dd>
-</dl>
+## {{ event.title }}
+{{ event.date | date: "%e %B %Y"}}, {{ event.begin }} - {{ event.end }}
+
+{{ event.description }}
+
+[Register here]({{ event.link }}){:target="_blank"}
 {% endif %}
 {% endfor %}
+
 
 # Past events
 {% assign pastEvents = events | reverse %}
@@ -26,10 +27,9 @@ permalink: /events/
 {% capture eventDate %}{{ event.date | date: '%s'}}{% endcapture %}
 
 {% if eventDate < nowunix %}
-### <a href="{{ event.link }}" target="_blank">{{ event.title }}</a>
-<dl>
-  <dd>On {{ event.date }} from {{ event.begin }} to {{ event.end }}</dd>
-  <dd>{{ event.description }}</dd>
-</dl>
+## {{ event.title }}
+{{ event.date | date: "%e %B %Y"}}, {{ event.begin }} - {{ event.end }}
+
+{{ event.description }}
 {% endif %}
 {% endfor %}
