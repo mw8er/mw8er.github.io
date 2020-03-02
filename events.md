@@ -28,7 +28,7 @@ permalink: /events/
 
 {% if eventDate < nowunix %}
 ## {{ event.title }}
-{{ event.date | date: "%e %B %Y"}}, {{ event.begin }} - {{ event.end }}
+{{ event.date | date: "%e %B %Y"}}
 
 {{ event.description }}
 {% endif %}
