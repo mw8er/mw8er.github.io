@@ -10,4 +10,4 @@ title: Welcome to mw8er
 
 # [Check out the events](/events/)
 
-**Work in Progress**
+Due to Corvid some events got canceled.
