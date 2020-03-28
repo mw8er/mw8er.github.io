@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Demo: Single Tenant"
+title:  "Demo: Tenant"
 categories: azure azuread
 ---
 
@@ -12,9 +12,9 @@ categories: azure azuread
 // Config object to be passed to Msal on creation
 const msalConfig = {
   auth: {
-    clientId: "060d181a-86b1-47f8-9fc5-2be256ecd1ca",
-    authority: "https://login.microsoftonline.com/aefcb506-bdad-43a9-bc13-b45dd2839172",
-    redirectUri: "{{ site.url }}/azure/azuread/Demo-Single-Tenant.html",
+    clientId: "30c60551-9997-44c6-a692-4f84eebaa10c",
+    authority: "https://login.microsoftonline.com/c45ef334-8840-4076-94f3-3925932daaa3",
+    redirectUri: "{{ site.url }}/azure/azuread/Demo-Tenant.html",
   },
   cache: {
     cacheLocation: "sessionStorage", // This configures where your cache will be stored
@@ -25,13 +25,15 @@ const msalConfig = {
 
 // Add here scopes for id token to be used at MS Identity Platform endpoints.
 const loginRequest = {
-  scopes: ["openid", "profile", "User.Read"],
+  scopes: ["openid", "profile", "email", "User.Read"],
+  prompt: 'select_account'
 };
 
 </script>
-<script type="text/javascript" src="{{ site.url }}/assets/js/singleTenant/ui.js"></script>  
-<script type="text/javascript" src="{{ site.url }}/assets/js/singleTenant/auth.js"></script>
-<script type="text/javascript" src="{{ site.url }}/assets/js/singleTenant/graph.js"></script>
+<script type="text/javascript" src="{{ site.url }}/assets/js/ui.js"></script>  
+<script type="text/javascript" src="{{ site.url }}/assets/js/auth.js"></script>
+<script type="text/javascript" src="{{ site.url }}/assets/js/graphConfig.js"></script>
+<script type="text/javascript" src="{{ site.url }}/assets/js/graph.js"></script>
 
 <h2 id="WelcomeMessage"></h2>
 <div>

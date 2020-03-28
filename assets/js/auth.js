@@ -12,18 +12,18 @@ let signInType;
 
 // Create the main myMSALObj instance
 // configuration parameters are located at authConfig.js
-const myMSALObj = new Msal.UserAgentApplication(msalConfig);
+var myMSALObj = new Msal.UserAgentApplication(msalConfig);
 
 // Register Callbacks for Redirect flow
 myMSALObj.handleRedirectCallback(authRedirectCallBack);
 
 function authRedirectCallBack(error, response) {
   if (error) {
-    console.log("error");
+    console.log(error);
   } else {
     if (response.tokenType === "id_token" && myMSALObj.getAccount() && !myMSALObj.isCallback(window.location.hash)) {
       console.log('id_token acquired at: ' + new Date().toString());
-      // showWelcomeMessage(myMSALObj.getAccount());
+      showWelcomeMessage(myMSALObj.getAccount());
       getTokenRedirect(loginRequest);
     } else if (response.tokenType === "access_token") {
       console.log('access_token acquired at: ' + new Date().toString());
@@ -42,6 +42,13 @@ window.onload = function () {
 //   // avoid duplicate code execution on page load in case of iframe and Popup window.
 //   showWelcomeMessage(myMSALObj.getAccount());
 // }
+function signIn2(method, policy) {
+  msalConfig.auth.authority = msalConfig.auth.authorityBase + policy;
+  console.log(msalConfig.auth.authority);
+  myMSALObj = new Msal.UserAgentApplication(msalConfig);
+  myMSALObj.handleRedirectCallback(authRedirectCallBack);
+  signIn(method);
+}
 
 function signIn(method) {
   signInType = isIE ? "SignInRedirect" : method;
@@ -50,9 +57,9 @@ function signIn(method) {
     myMSALObj.loginPopup(loginRequest)
       .then(loginResponse => {
         console.log('id_token acquired at: ' + new Date().toString());
-        // if (myMSALObj.getAccount()) {
-        //   showWelcomeMessage(myMSALObj.getAccount());
-        // }
+        if (myMSALObj.getAccount()) {
+          showWelcomeMessage(myMSALObj.getAccount());
+        }
       }).catch(function (error) {
         console.log(error);
       });

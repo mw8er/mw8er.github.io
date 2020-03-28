@@ -39,17 +39,17 @@ function showWelcomeMessage(account) {
     console.log("idToken == null");
   }
 
-  if (signInPopup != null) {
-    signInPopup.style.display = display;
-  } else {
-    console.log("signInPopup == null");
-  }
+  // if (signInPopup != null) {
+  //   signInPopup.style.display = display;
+  // } else {
+  //   console.log("signInPopup == null");
+  // }
 
-  if (signInRedirect != null) {
-    signInRedirect.style.display = display;
-  } else {
-    console.log("signInRedirect == null");
-  }
+  // if (signInRedirect != null) {
+  //   signInRedirect.style.display = display;
+  // } else {
+  //   console.log("signInRedirect == null");
+  // }
 
   if (signOut != null) {
     if (account == null) {
