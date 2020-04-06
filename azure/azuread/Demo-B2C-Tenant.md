@@ -44,6 +44,17 @@ const loginRequest = {
   <button id="SignOut" onclick="signOut(this.id)" style="display:none">Sign out</button>
 </div>
 
+- Consumer:
+  - Local account, including registration
+  - Google
+  - Microsoft
+    - equals [Demo: Common - Consumers]({% link azure/azuread/Demo-Common-Consumers.md %})
+    - alternative [Demo: Common]({% link azure/azuread/Demo-Common.md %})
+- Partner: Azure AD Organisations
+  - equals [Demo: Organizations]({% link azure/azuread/Demo-Organizations.md %})
+  - alternative [Demo: Common - Organizations]({% link azure/azuread/Demo-Common-Organizations.md %}) 
+- Admin: Azure AD mw8er, including Guests
+  - equals [Demo: Tenant]({% link azure/azuread/Demo-Tenant.md %})
 
 ### ID Token
 <pre><code id="IdToken"></code></pre>
