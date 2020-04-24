@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Demo: Organizations"
+title:  "Demo: Organizations - Tenant"
 categories: azure azuread
 ---
 

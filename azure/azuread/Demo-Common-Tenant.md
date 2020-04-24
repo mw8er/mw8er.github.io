@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Demo: Organizations - Common"
+title:  "Demo: Common - Tenant"
 categories: azure azuread
 ---
 
@@ -12,9 +12,9 @@ categories: azure azuread
 // Config object to be passed to Msal on creation
 const msalConfig = {
   auth: {
-    clientId: "d694c9d0-587b-4b1a-b60e-485b97b14d59",
-    authority: "https://login.microsoftonline.com/common",
-    redirectUri: "{{ site.url }}/azure/azuread/Demo-Organizations-Common.html",
+    clientId: "04e5f602-cbc5-43e0-b12c-aa1f069a465a",
+    authority: "https://login.microsoftonline.com/c45ef334-8840-4076-94f3-3925932daaa3",
+    redirectUri: "{{ site.url }}/azure/azuread/Demo-Common-Tenant.html",
   },
   cache: {
     cacheLocation: "sessionStorage", // This configures where your cache will be stored
