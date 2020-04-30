@@ -38,8 +38,21 @@ const loginRequest = {
 
 <h2 id="WelcomeMessage"></h2>
 <div>
-  <button onclick="signIn2('SignInRedirect', 'B2C_1A_mw8er_demo_signup_signin_consumer')">Sign in to buy tickets</button>
-  <button onclick="signIn2('SignInRedirect', 'B2C_1A_mw8er_demo_signup_signin_partner')">Sign in to provide tickets for events</button>
-  <button onclick="signIn2('SignInRedirect', 'B2C_1A_mw8er_demo_signup_signin_admin')">Sign in to add partners</button>
+  <button onclick="signIn2('SignInRedirect', 'B2C_1A_mw8er_demo_signup_signin_consumer')">Sign in Consumer</button>
+  <button onclick="signIn2('SignInRedirect', 'B2C_1A_mw8er_demo_signup_signin_partner')">Sign in Partner</button>
+  <button onclick="signIn2('SignInRedirect', 'B2C_1A_mw8er_demo_signup_signin_admin')">Sign in Admin</button>
   <button id="SignOut" onclick="signOut(this.id)" style="display:none">Sign out</button>
 </div>
+
+- Consumer:
+  - Local account, including registration
+  - Google
+  - Microsoft - [Demo: Common - Consumers]({% link azure/azuread/Demo-Common-Consumers.md %})
+- Partner: Azure AD Organisations - [Demo: Organizations]({% link azure/azuread/Demo-Organizations.md %})
+- Admin: Azure AD mw8er, including Guests - [Demo: Tenant]({% link azure/azuread/Demo-Tenant.md %})
+
+### ID Token
+<pre><code id="IdToken"></code></pre>
+
+<!-- ### Access Token
+<pre><code id="AccessToken"></code></pre> -->

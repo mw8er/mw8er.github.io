@@ -37,14 +37,6 @@ const loginRequest = {
 
 <h2 id="WelcomeMessage"></h2>
 <div>
-  <button id="SignInPopup" onclick="signIn(this.id)">Sign in using Popup</button>
-  <button id="SignInRedirect" onclick="signIn(this.id)">Sign in using Redirect</button>
+  <button id="SignInRedirect" onclick="signIn(this.id)">Sign in</button>
   <button id="SignOut" onclick="signOut(this.id)" style="display:none">Sign out</button>
 </div>
-
-
-### ID Token
-<pre><code id="IdToken"></code></pre>
-
-<!-- ### Access Token
-<pre><code id="AccessToken"></code></pre> -->

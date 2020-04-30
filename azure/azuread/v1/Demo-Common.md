@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Demo: Organizations"
+title:  "Demo: Common"
 categories: azure azuread
 ---
 
@@ -12,9 +12,9 @@ categories: azure azuread
 // Config object to be passed to Msal on creation
 const msalConfig = {
   auth: {
-    clientId: "d694c9d0-587b-4b1a-b60e-485b97b14d59",
-    authority: "https://login.microsoftonline.com/organizations",
-    redirectUri: "{{ site.url }}/azure/azuread/Demo-Organizations.html",
+    clientId: "04e5f602-cbc5-43e0-b12c-aa1f069a465a",
+    authority: "https://login.microsoftonline.com/common",
+    redirectUri: "{{ site.url }}/azure/azuread/Demo-Common.html",
   },
   cache: {
     cacheLocation: "sessionStorage", // This configures where your cache will be stored
@@ -37,6 +37,14 @@ const loginRequest = {
 
 <h2 id="WelcomeMessage"></h2>
 <div>
-  <button id="SignInRedirect" onclick="signIn(this.id)">Sign in</button>
+  <button id="SignInPopup" onclick="signIn(this.id)">Sign in using Popup</button>
+  <button id="SignInRedirect" onclick="signIn(this.id)">Sign in using Redirect</button>
   <button id="SignOut" onclick="signOut(this.id)" style="display:none">Sign out</button>
 </div>
+
+
+### ID Token
+<pre><code id="IdToken"></code></pre>
+
+<!-- ### Access Token
+<pre><code id="AccessToken"></code></pre> -->
