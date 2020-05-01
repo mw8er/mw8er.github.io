@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Demo: Tenant"
+title:  "Demo: Administrator Area"
 categories: azure azuread
 ---
 
@@ -40,3 +40,15 @@ const loginRequest = {
   <button id="SignInRedirect" onclick="signIn(this.id)">Sign in</button>
   <button id="SignOut" onclick="signOut(this.id)" style="display:none">Sign out</button>
 </div>
+
+<!-- ### Issuer
+<pre><code id="issuerValue"></code></pre>
+
+### Roles
+<pre><code id="listRoles"></code></pre> -->
+
+### ID Token
+<pre><code id="IdToken"></code></pre>
+
+<!-- ### Access Token
+<pre><code id="AccessToken"></code></pre> -->

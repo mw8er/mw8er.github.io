@@ -47,12 +47,15 @@ const loginRequest = {
 - Consumer:
   - Local account, including registration
   - Google
-  - Microsoft - [Demo: Common - Consumers]({% link azure/azuread/Demo-Common-Consumers.md %})
-- Partner: Azure AD Organisations - [Demo: Organizations]({% link azure/azuread/Demo-Organizations.md %})
-- Admin: Azure AD mw8er, including Guests - [Demo: Tenant]({% link azure/azuread/Demo-Tenant.md %})
+  - Microsoft - [Demo: Common - Consumers]({% link azure/azuread/v1/Demo-Common-Consumers.md %})
+- Partner: Azure AD Organisations - [Demo: Organizations]({% link azure/azuread/v1/Demo-Organizations.md %})
+- Admin: Azure AD mw8er, including Guests - [Demo: Tenant]({% link azure/azuread/v1/Demo-Tenant.md %})
 
-### ID Token
-<pre><code id="IdToken"></code></pre>
+### Roles
+<pre><code id="roles"></code></pre>
+
+<!-- ### ID Token
+<pre><code id="IdToken"></code></pre> -->
 
 <!-- ### Access Token
 <pre><code id="AccessToken"></code></pre> -->

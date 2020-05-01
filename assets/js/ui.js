@@ -12,11 +12,15 @@ function showWelcomeMessage(account) {
   var signInRedirect = document.getElementById("SignInRedirect");
   var signOut = document.getElementById("SignOut");
   var idToken = document.getElementById("IdToken");
+  var roles = document.getElementById("listRoles");
+  var issuer = document.getElementById("issuerValue");
 
   var display = 'none';
   if (account == null) {
     display = 'initial';
   }
+  console.log(account);
+
 
   // Reconfiguring DOM elements
 
@@ -28,6 +32,24 @@ function showWelcomeMessage(account) {
     }
   } else {
     console.log("welcomeDiv == null");
+  }
+
+  if (roles != null) {
+    roles.innerHTML = "";
+    if (account != null) {
+      roles.innerHTML =  JSON.stringify(account.idToken.roles, undefined, 2);
+    }
+  } else {
+    console.log("roles == null");
+  }
+
+  if (issuer != null) {
+    issuer.innerHTML = "";
+    if (account != null) {
+      issuer.innerHTML =  account.idToken.iss;
+    }
+  } else {
+    console.log("issuer == null");
   }
 
   if (idToken != null) {

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Demo: B2C Tenant"
+title:  "Demo: Ticket Portal"
 categories: azure azuread
 ---
 
@@ -43,3 +43,15 @@ const loginRequest = {
   <button onclick="signIn2('SignInRedirect', 'B2C_1A_mw8er_demo_signup_signin_admin')">Sign in to add partners</button>
   <button id="SignOut" onclick="signOut(this.id)" style="display:none">Sign out</button>
 </div>
+
+<!-- ### Issuer
+<pre><code id="issuerValue"></code></pre>
+
+### Roles
+<pre><code id="listRoles"></code></pre> -->
+
+### ID Token
+<pre><code id="IdToken"></code></pre>
+
+<!-- ### Access Token
+<pre><code id="AccessToken"></code></pre> -->
