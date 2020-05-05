@@ -16,12 +16,12 @@
 - date: 2020-05-14
   begin: "8:30"
   end: "17:00"
-  title: Cloud Native Application Development and DevOps in Azure
+  title: Canceled - Cloud Native Application Development and DevOps in Azure
   location: >-
     Microsoft Schweiz GmbH
     Richtistrasse 3
     8304 Wallisellen
-  link: https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x8978508abcd
+  # link: https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x8978508abcd
   description: >-
     Microsoft Azure is a colorful universe of cloud services for every developer on every platform.
     Are you looking into building new Cloud Native Applications in DevOps fashion or do you want to enrich existing applications?
@@ -30,12 +30,12 @@
 - date: 2020-06-19
   begin: "8:30"
   end: "17:00"
-  title: Kubernetes on Azure Hands-on Lab
+  title: Canceled - Kubernetes on Azure Hands-on Lab
   location: >-
     Microsoft Schweiz GmbH
     Richtistrasse 3
     8304 Wallisellen
-  link: https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x8978850abcd
+  # link: https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x8978850abcd
   description: >-
     In this hands-on workshop experienced Microsoft proctors will guide you through what it takes to run a container-based application
     to a Kubernetes cluster running on Azure Kubernetes Service. This workshop requires each attendee to understand k8s on a basic level
