@@ -8,6 +8,6 @@ layout: home
 title: Welcome to mw8er
 ---
 
-# [Check out the events](/events/)
+<!-- # [Check out the events](/events/) -->
 
 Due to COVID-19 the events got canceled.
