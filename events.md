@@ -16,7 +16,7 @@ permalink: /events/
 
 {{ event.description }}
 
-[Register here]({{ event.link }}){:target="_blank"}
+{% if event.link %}[Register here]({{ event.link }}){:target="_blank"}{% endif %}
 {% endif %}
 {% endfor %}
 
