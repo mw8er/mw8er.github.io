@@ -10,4 +10,4 @@ title: Welcome to mw8er
 
 # [Check out the events](/events/)
 
-Due to Corvid some events got canceled.
+Due to COVID-19 the events got canceled.
