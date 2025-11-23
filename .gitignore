@@ -1,0 +1,4 @@
+.DS_Store
+site/public
+site/.hugo_build.lock
+site/themes/ananke
