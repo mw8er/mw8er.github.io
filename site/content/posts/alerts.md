@@ -1,8 +1,9 @@
-+++
-date = '2025-11-23T21:37:59+01:00'
-draft = false
-title = 'Alerts'
-+++
+---
+date: '2025-11-23T21:37:59+01:00'
+draft: false
+title: 'Alerts'
+summary: Just some Alerts
+---
 
 > Just a blockquote
 

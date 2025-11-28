@@ -1,0 +1,25 @@
+baseURL: https://mw8er.github.io/
+languageCode: en-us
+title: mw8er
+theme: infinity
+
+params:
+  sidebar:
+    title: Michael Wachter
+    avatar: images/me.jpg
+  social:
+    - icon: linkedin
+      url: https://www.linkedin.com/in/mw8er
+    - icon: github
+      url: https://github.com/mw8er
+
+menus:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 1
+    - identifier: blog
+      name: Blog
+      url: /posts/
+      weight: 2

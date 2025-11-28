@@ -1,8 +1,9 @@
-+++
-date = '2025-11-23T21:37:59+01:00'
-draft = false
-title = 'My mermaid test'
-+++
+---
+date: '2025-11-23T21:37:59+01:00'
+draft: false
+title: 'My mermaid test'
+summary: Just something with mermaid
+---
 
 Hello Welt
 
