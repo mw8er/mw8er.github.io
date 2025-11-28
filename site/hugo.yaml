@@ -6,7 +6,7 @@ theme: infinity
 params:
   sidebar:
     title: Michael Wachter
-    avatar: images/me.jpg
+    avatar: /images/me.jpg
   social:
     - icon: linkedin
       url: https://www.linkedin.com/in/mw8er
