@@ -1,0 +1,5 @@
+<a href="{{ .Destination | safeURL }}" target="_blank"
+  {{- with .Title }} title="{{ . }}"{{ end -}}
+>
+  {{- with .Text }}{{ . }}{{ end -}}
+</a>

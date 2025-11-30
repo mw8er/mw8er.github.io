@@ -1,5 +1,5 @@
 ---
-title: 'Home'
+title: 'mw8er'
 date: 2023-01-01T08:00:00-07:00
 draft: false
 ---
@@ -18,7 +18,7 @@ several Microsoft Cloud certifications which helps me making your cloud valuable
 
 I’m working as *Principal Architect* at [Innovation Process Technology AG](https://ipt.ch) in Switzerland.
 
-We put our :heart: into your IT.
+We put our heart into your IT.
 
 Looking for a partner who helps making your cloud valuable?
 
