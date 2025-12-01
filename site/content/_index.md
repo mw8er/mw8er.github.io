@@ -1,10 +1,12 @@
 ---
-title: 'Home'
+title: 'mw8er'
 date: 2023-01-01T08:00:00-07:00
 draft: false
 ---
 
 ## What is the meaning of *mw8er*?
+
+{{< figure src="/images/logo-mw8er.png" width="200" alt="mw8er logo" class="left" >}}
 
 - *m* is the first letter of my first name
 - *w8er* is derived from my last name. In german *8* is written *acht*, so *w8er = wachter*
@@ -16,12 +18,12 @@ several Microsoft Cloud certifications which helps me making your cloud valuable
 
 ## Innovation Process Technology AG
 
+{{< figure src="/images/logo-ipt.webp" width="200" alt="ipt logo" class="left" >}}
+
 I’m working as *Principal Architect* at [Innovation Process Technology AG](https://ipt.ch) in Switzerland.
 
-We put our :heart: into your IT.
+We put our heart into your IT.
 
 Looking for a partner who helps making your cloud valuable?
 
 [Feel free to contact me.](https://contacts.ipt.ch/public/74eb503e-d76e-404b-82d5-bb9612b59feb)
-
-<!-- [![barcode](/images/contactify-barcode.png)](https://contacts.ipt.ch/public/74eb503e-d76e-404b-82d5-bb9612b59feb) -->

@@ -1,0 +1,28 @@
+
+<table class="w3-table w3-striped w3-bordered w3-hoverable w3-white">
+{{ range $certification := .Site.Data.certifications }}
+{{ if ne $certification.href "" }}
+    <tr class="w3-card">
+        <td>
+            <a href="{{ $certification.href }}" target="_blank" rel="noopener noreferrer">
+            <img src="{{ $certification.src }}" alt="{{ $certification.title }}" style="height:50px;">
+            </a>
+        </td>
+        <td style="vertical-align: middle;">
+            <a href="{{ $certification.href }}" target="_blank" rel="noopener noreferrer">
+            <span class="w3-large">{{ $certification.title }}</span>
+            </a>
+        </td>
+    </tr>
+{{ else }}
+    <tr class="w3-card w3-hover-none">
+        <td>
+            <img src="{{ $certification.src }}" alt="{{ $certification.title }}" style="height:50px;">
+        </td>
+        <td style="vertical-align: middle;">
+            <span class="w3-large">{{ $certification.title }}</span>
+        </td>
+    </tr>
+{{ end }}
+{{ end }}
+</table>

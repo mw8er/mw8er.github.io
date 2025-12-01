@@ -9,8 +9,10 @@ params:
     avatar: /images/me.jpg
   social:
     - icon: linkedin
+      text: LinkedIn
       url: https://www.linkedin.com/in/mw8er
     - icon: github
+      text: GitHub
       url: https://github.com/mw8er
 
 menus:
@@ -18,8 +20,30 @@ menus:
     - identifier: home
       name: Home
       url: /
-      weight: 1
+      weight: 10
     - identifier: blog
       name: Blog
-      url: /posts/
-      weight: 2
+      url: /blog/
+      weight: 20
+    - identifier: certifications
+      name: Certifications
+      url: /certifications/
+      weight: 30
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 40
+
+markup:
+  goldmark:
+    extensions:
+      passthrough:
+        delimiters:
+          block: [['\[', '\]'], ['$$', '$$']]
+          inline: [[ '\(', '\)'], ['$', '$']]
+        enable: true
+      parser:
+      attribute:
+        title: true
+        block: true
+      wrapStandAloneImageWithinParagraph: false
