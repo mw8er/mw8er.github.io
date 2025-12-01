@@ -20,20 +20,4 @@
     {{ or (i18n .AlertType) (title .AlertType) }}
     {{ end }}</p>
   <p>{{ .Text }}</p>
-</div> 
-
-{{/*  <div class="w3-card-2">
-    <header class="w3-container w3-blue">
-    <i class="fa {{ index $emojis .AlertType }} w3-large"></i>
-    <p class="alert-heading">
-    {{ with .AlertTitle }}
-    {{ . }}
-    {{ else }}
-    {{ or (i18n .AlertType) (title .AlertType) }}
-    {{ end }}
-    </header>
-<div class="w3-container">
-  <p>{{ .Text }}</p>
 </div>
-</div>
-  */}}

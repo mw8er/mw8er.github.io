@@ -42,7 +42,7 @@ markup:
           block: [['\[', '\]'], ['$$', '$$']]
           inline: [[ '\(', '\)'], ['$', '$']]
         enable: true
-      parser:
+    parser:
       attribute:
         title: true
         block: true

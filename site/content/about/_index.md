@@ -10,4 +10,4 @@ It's implementation relies on
 - [W3 CSS](https://www.w3schools.com/w3css)
 - [Font Awesome](https://fontawesome.com)
 
-And the generation happend with [Hugo](https://gohugo.io).
+And the generation happened with [Hugo](https://gohugo.io).
