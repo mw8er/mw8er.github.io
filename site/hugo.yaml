@@ -20,18 +20,30 @@ menus:
     - identifier: home
       name: Home
       url: /
-      weight: 1
+      weight: 10
     - identifier: blog
       name: Blog
       url: /blog/
-      weight: 2
+      weight: 20
+    - identifier: certifications
+      name: Certifications
+      url: /certifications/
+      weight: 30
     - identifier: about
       name: About
       url: /about/
-      weight: 3
+      weight: 40
 
 markup:
   goldmark:
-    parser:
+    extensions:
+      passthrough:
+        delimiters:
+          block: [['\[', '\]'], ['$$', '$$']]
+          inline: [[ '\(', '\)'], ['$', '$']]
+        enable: true
+      parser:
       attribute:
+        title: true
         block: true
+      wrapStandAloneImageWithinParagraph: false

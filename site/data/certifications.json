@@ -1,0 +1,63 @@
+
+[
+  {
+      "href": "https://learn.microsoft.com/api/credentials/share/en-us/mw8er/75FD2E8F90F69D62?sharingId=C37185D65C5BEA7",
+      "src": "https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-expert-badge.svg?branch=main",
+      "title": "Microsoft Certified: Azure Solutions Architect Expert"
+  },
+  {
+      "href": "https://learn.microsoft.com/api/credentials/share/en-us/mw8er/5FE34095D9F82F52?sharingId=C37185D65C5BEA7",
+      "src": "https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-expert-badge.svg?branch=main",
+      "title": "Microsoft Certified: DevOps Engineer Expert"
+  },
+  {
+      "href": "https://learn.microsoft.com/api/credentials/share/en-us/mw8er/5C0CA9C4ED956FDA?sharingId=C37185D65C5BEA7",
+      "src": "https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-associate-badge.svg?branch=main",
+      "title": "Microsoft Certified: Azure Network Engineer Associate"
+  },
+  {
+      "href": "https://learn.microsoft.com/api/credentials/share/en-us/mw8er/758D9070C4B118A?sharingId=C37185D65C5BEA7",
+      "src": "https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-associate-badge.svg?branch=main",
+      "title": "Microsoft Certified: Azure Developer Associate"
+  },
+  {
+      "href": "https://learn.microsoft.com/api/credentials/share/en-us/mw8er/7FCC41D7BFB977CE?sharingId=C37185D65C5BEA7",
+      "src": "https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-associate-badge.svg?branch=main",
+      "title": "Microsoft Certified: Identity and Access Administrator Associate"
+  },
+  {
+      "href": "https://learn.microsoft.com/api/credentials/share/en-us/mw8er/81C59BB3338AEC23?sharingId=C37185D65C5BEA7",
+      "src": "https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-associate-badge.svg?branch=main",
+      "title": "Microsoft Certified: Azure Security Engineer Associate"
+  },
+  {
+      "href": "https://learn.microsoft.com/api/credentials/share/en-us/mw8er/E7CB35433B3ACFF5?sharingId=C37185D65C5BEA7",
+      "src": "https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-associate-badge.svg?branch=main",
+      "title": "Microsoft Certified: Azure Administrator Associate"
+  },
+  {
+      "href": "https://learn.microsoft.com/api/credentials/share/en-us/mw8er/E1D8171676262044?sharingId=C37185D65C5BEA7",
+      "src": "https://learn.microsoft.com/de-de/media/learn/certification/badges/github-foundations.svg?branch=main",
+      "title": "GitHub Foundations"
+  },
+  {
+      "href": "https://learn.microsoft.com/api/credentials/share/en-us/mw8er/8F151F1B07998F4E?sharingId=C37185D65C5BEA7",
+      "src": "https://learn.microsoft.com/de-de/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg?branch=main",
+      "title": "Microsoft Certified: Azure Fundamentals"
+  },
+  {
+      "href": "https://www.credly.com/earner/earned/badge/2360d9d0-e3ab-4fe2-ae92-47dd5195aacf",
+      "src": "https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-general-badge.svg?branch=main",
+      "title": "Microsoft Certified Solutions Associate: Cloud Platform",
+      "number": "9EF3CD-00B624",
+      "date": "2018-11-29"
+  },
+  {
+      "href": "",
+      "src": "https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-general-badge.svg?branch=main",
+      "title": "Microsoft Certified Professional",
+      "number": "EB044F-DBFEAG",
+      "date": "2018-03-27"
+  }
+
+]

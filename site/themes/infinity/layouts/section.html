@@ -2,6 +2,7 @@
   <h1>{{ .Title }}</h1>
   {{ .Content }}
   {{ range .Pages }}
+    <section>
     <div class="w3-panel w3-card-4">
       <a href="{{ .RelPermalink }}">
       <h2>{{ .LinkTitle }}</a></h2>
@@ -9,7 +10,6 @@
       <p>{{ .Date | time.Format ":date_long" }}</p>
       </a>
     </div>
-    <section>
     </section>
   {{ end }}
 {{ end }}
