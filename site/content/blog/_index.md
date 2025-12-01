@@ -1,7 +1,7 @@
 ---
 title: 'Blog'
-date: 2025-12-01T08:30:00-07:00
+date: 2025-11-30T08:30:00-07:00
 draft: false
 ---
 
-You'll find some things here.
+You'll find some things here. Yes, still work in progress.
