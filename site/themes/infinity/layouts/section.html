@@ -1,7 +1,7 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
   {{ .Content }}
-  {{ $paginator := .Paginate .Pages 3 }}
+  {{ $paginator := .Paginate .Pages }}
   {{ range $paginator.Pages }}
     <section>
     <div class="w3-panel w3-card-4">
