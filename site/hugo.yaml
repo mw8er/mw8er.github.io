@@ -47,3 +47,8 @@ markup:
         title: true
         block: true
       wrapStandAloneImageWithinParagraph: false
+
+pagination:
+  disableAliases: true
+  pagerSize: 5
+  path: page

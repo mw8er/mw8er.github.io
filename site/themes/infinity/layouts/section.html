@@ -1,7 +1,8 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
   {{ .Content }}
-  {{ range .Pages }}
+  {{ $paginator := .Paginate .Pages 3 }}
+  {{ range $paginator.Pages }}
     <section>
     <div class="w3-panel w3-card-4">
       <a href="{{ .RelPermalink }}">
@@ -12,4 +13,5 @@
     </div>
     </section>
   {{ end }}
+{{ partial "pagination.html" . }}
 {{ end }}
