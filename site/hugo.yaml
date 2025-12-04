@@ -19,19 +19,19 @@ menus:
   main:
     - identifier: home
       name: Home
-      url: /
+      pageRef: /
       weight: 10
     - identifier: blog
       name: Blog
-      url: /blog/
+      pageRef: /blog
       weight: 20
     - identifier: certifications
       name: Certifications
-      url: /certifications/
+      pageRef: /certifications
       weight: 30
     - identifier: about
       name: About
-      url: /about/
+      pageRef: /about
       weight: 40
 
 markup:

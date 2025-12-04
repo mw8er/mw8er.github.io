@@ -19,9 +19,9 @@ Renders a menu for the given menu ID.
   {{- range .menuEntries }}
     {{- $attrs := dict "href" .URL "class" "w3-bar-item w3-button" }}
     {{- if $page.IsMenuCurrent .Menu . }}
-      {{- $attrs = merge $attrs (dict "class" "w3-bar-item w3-button w3-dark-grey" "aria-current" "page") }}
+      {{- $attrs = merge $attrs (dict "class" "w3-bar-item w3-button" "aria-current" "page") }}
     {{- else if $page.HasMenuCurrent .Menu .}}
-      {{- $attrs = merge $attrs (dict "class" "w3-bar-item w3-button" "aria-current" "true") }}
+      {{- $attrs = merge $attrs (dict "class" "w3-bar-item w3-button w3-dark-grey" "aria-current" "true") }}
     {{- end }}
     {{- $name := .Name }}
     {{- with .Identifier }}
