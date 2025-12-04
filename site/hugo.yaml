@@ -23,15 +23,15 @@ menus:
       weight: 10
     - identifier: blog
       name: Blog
-      pageRef: /blog
+      pageRef: /blog/
       weight: 20
     - identifier: certifications
       name: Certifications
-      pageRef: /certifications
+      pageRef: /certifications/
       weight: 30
     - identifier: about
       name: About
-      pageRef: /about
+      pageRef: /about/
       weight: 40
 
 markup:
