@@ -1,5 +1,5 @@
 <p>Find me on social media.</p>
 {{ range  site.Params.social }}
-<a href="{{ .url }}" target="_blank"><i class="fa fa-{{ .icon }} w3-hover-opacity"></i></a>
+<a href="{{ .url }}" target="_blank"><i class="{{ .icon }} w3-hover-opacity"></i></a>
 {{- end }}
 <p>Copyright {{ now.Year }}. All rights reserved.</p>

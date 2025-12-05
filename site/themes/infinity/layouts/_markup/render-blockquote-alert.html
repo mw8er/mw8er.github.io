@@ -1,9 +1,9 @@
 {{- $emojis := dict
-  "caution" "fa-exclamation"
-  "important" "fa-exclamation-circle"
-  "note" "fa-info"
-  "tip" "fa-lightbulb-o"
-  "warning" "fa-exclamation-triangle"
+  "caution" "fa-solid fa-exclamation"
+  "important" "fa-solid fa-circle-exclamation"
+  "note" "fa-solid fa-circle-info"
+  "tip" "fa-regular fa-lightbulb"
+  "warning" "fa-solid fa-triangle-exclamation"
 -}}
 {{- $color := dict
   "caution" "red"
@@ -13,7 +13,7 @@
   "warning" "orange"
 -}}
 <div class="w3-panel w3-leftbar w3-border-{{ index $color .AlertType }}">
-    <p class="alert-heading w3-text-{{ index $color .AlertType }}"><i class="fa {{ index $emojis .AlertType }} "></i>
+    <p class="alert-heading w3-text-{{ index $color .AlertType }}"><i class="{{ index $emojis .AlertType }}"></i>
     {{ with .AlertTitle }}
     {{ . }}
     {{ else }}
