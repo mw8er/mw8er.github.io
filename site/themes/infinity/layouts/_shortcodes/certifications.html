@@ -49,7 +49,7 @@ function openCertificationGroup(event, groupName) {
   document.getElementById("certification-group:" + groupName).style.display = "block";
   x = document.getElementsByClassName("certification-group");
   for (index = 0; index < x.length; index++) {
-    if (x[index].id != "certification-group:" + groupName)
+    if (x[index].id !== "certification-group:" + groupName)
         x[index].style.display = "none";
   }
   tablinks = document.getElementsByClassName("tablink");
