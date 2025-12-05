@@ -8,10 +8,10 @@ params:
     title: Michael Wachter
     avatar: /images/me.jpg
   social:
-    - icon: fa-linkedin
+    - icon: fa-brands fa-linkedin
       text: LinkedIn
       url: https://www.linkedin.com/in/mw8er
-    - icon: fa-github
+    - icon: fa-brands fa-github
       text: GitHub
       url: https://github.com/mw8er
 
