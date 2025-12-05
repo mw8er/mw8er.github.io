@@ -48,9 +48,10 @@ function openCertificationGroup(event, groupName) {
   const activeElementClass = " w3-disabled w3-light-grey";
   document.getElementById("certification-group:" + groupName).style.display = "block";
   x = document.getElementsByClassName("certification-group");
-  for (index = 0; index < x.length; index++) {
-    if (x[index].id !== "certification-group:" + groupName)
-        x[index].style.display = "none";
+  for (const element of x) {
+    if (element.id !== `certification-group:${groupName}`) {
+        element.style.display = "none";
+    }
   }
   tablinks = document.getElementsByClassName("tablink");
   for (index = 0; index < tablinks.length; index++) {
