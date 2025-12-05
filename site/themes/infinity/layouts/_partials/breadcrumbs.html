@@ -3,5 +3,5 @@
 <a href="{{ .RelPermalink }}" class="w3-button"{{ if .IsHome }} aria-label="Home"{{ end }}>{{ if .IsHome }}<i class="fa-solid fa-house"></i>{{ else }}{{ .Title }}{{ end }}</a>
 <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
 {{- end }}
-<a href="{{ .RelPermalink }}" class="w3-button" aria-current="page"{{ if .IsHome }} aria-label="Home"{{ end }}>{{ if .IsHome }}<i class="fa-solid fa-house"></i>{{ else }}{{ .Title }}{{ end }}</a>
+<span class="w3-button" aria-current="page"{{ if .IsHome }} aria-label="Home"{{ end }}>{{ if .IsHome }}<i class="fa-solid fa-house"></i>{{ else }}{{ .Title }}{{ end }}</span>
 </div>
