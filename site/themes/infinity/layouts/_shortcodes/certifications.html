@@ -1,9 +1,9 @@
 <div class="w3-margin-bottom">
 <div class="w3-bar w3-teal">
-{{ $disabled := "w3-disabled w3-light-grey"}}
+{{ $activeTabClasses := "w3-disabled w3-light-grey"}}
 {{ range $certification_group := .Site.Data.certifications }}
-  <button class="w3-bar-item w3-button tablink {{$disabled}}" onclick="openCertificationGroup(event, '{{ .name }}')"><i class="{{ .icon }}"></i> {{ .name }}</button>
-{{ $disabled = ""}}
+  <button class="w3-bar-item w3-button tablink {{$activeTabClasses}}" onclick="openCertificationGroup(event, '{{ .name }}')"><i class="{{ .icon }}"></i> {{ .name }}</button>
+{{ $activeTabClasses = ""}}
 {{ end }}
 </div>
 
