@@ -1,5 +1,5 @@
 <div class="w3-margin-bottom">
-<div class="w3-bar w3-teal">
+<div class="w3-bar w3-teal" role="tablist">
 {{ $activeTabClasses := "w3-disabled w3-light-grey"}}
 {{ range $certification_group := .Site.Data.certifications }}
   <button class="w3-bar-item w3-button tablink {{$activeTabClasses}}" onclick="openCertificationGroup(event, '{{ .name }}')"><i class="{{ .icon }}"></i> {{ .name }}</button>
@@ -9,7 +9,7 @@
 
 {{ $display := "block"}}
 {{ range $certification_group := .Site.Data.certifications }}
-<div id="certification-group:{{ .name }}" class="certification-group" style="display:{{ $display }};">
+<div id="certification-group:{{ .name }}" class="certification-group" style="display:{{ $display }};" role="tabpanel">
 {{ $display = "none"}}
 <table class="w3-table w3-bordered w3-hoverable w3-white">
 {{ range $certification := .certifications }}
