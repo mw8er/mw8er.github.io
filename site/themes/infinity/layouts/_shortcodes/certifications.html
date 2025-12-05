@@ -1,9 +1,21 @@
+<div class="w3-margin-bottom">
+<div class="w3-bar w3-teal">
+{{ $disabled := "w3-disabled w3-light-grey"}}
+{{ range $certification_group := .Site.Data.certifications }}
+  <button class="w3-bar-item w3-button tablink {{$disabled}}" onclick="openCertificationGroup(event, '{{ .name }}')"><i class="{{ .icon }}"></i> {{ .name }}</button>
+{{ $disabled = ""}}
+{{ end }}
+</div>
 
-<table class="w3-table w3-striped w3-bordered w3-hoverable w3-white">
-{{ range $certification := .Site.Data.certifications }}
+{{ $display := "block"}}
+{{ range $certification_group := .Site.Data.certifications }}
+<div id="certification-group:{{ .name }}" class="certification-group" style="display:{{ $display }};">
+{{ $display = "none"}}
+<table class="w3-table w3-bordered w3-hoverable w3-white">
+{{ range $certification := .certifications }}
 {{ if ne $certification.href "" }}
     <tr class="w3-card">
-        <td>
+        <td style="width:100px;">
             <a href="{{ $certification.href }}" target="_blank" rel="noopener noreferrer">
             <img src="{{ $certification.src }}" alt="{{ $certification.title }}" style="height:50px;">
             </a>
@@ -26,3 +38,24 @@
 {{ end }}
 {{ end }}
 </table>
+</div>
+{{ end }}
+</div>
+
+<script>
+function openCertificationGroup(event, groupName) {
+  var i, x, tablinks;
+  var activeElement = " w3-disabled w3-light-grey";
+  document.getElementById("certification-group:" + groupName).style.display = "block";
+  x = document.getElementsByClassName("certification-group");;
+  for (i = 0; i < x.length; i++) {
+    if (x[i].id != "certification-group:" + groupName)
+        x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(activeElement, "");
+  }
+  event.currentTarget.className += activeElement;
+}
+</script>
