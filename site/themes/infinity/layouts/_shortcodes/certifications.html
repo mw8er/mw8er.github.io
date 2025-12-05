@@ -44,18 +44,18 @@
 
 <script>
 function openCertificationGroup(event, groupName) {
-  var i, x, tablinks;
-  var activeElement = " w3-disabled w3-light-grey";
+  let index, x, tablinks;
+  const activeElementClass = " w3-disabled w3-light-grey";
   document.getElementById("certification-group:" + groupName).style.display = "block";
-  x = document.getElementsByClassName("certification-group");;
-  for (i = 0; i < x.length; i++) {
-    if (x[i].id != "certification-group:" + groupName)
-        x[i].style.display = "none";
+  x = document.getElementsByClassName("certification-group");
+  for (index = 0; index < x.length; index++) {
+    if (x[index].id != "certification-group:" + groupName)
+        x[index].style.display = "none";
   }
   tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(activeElement, "");
+  for (index = 0; index < tablinks.length; index++) {
+    tablinks[index].className = tablinks[index].className.replace(activeElementClass, "");
   }
-  event.currentTarget.className += activeElement;
+  event.currentTarget.className += activeElementClass;
 }
 </script>
