@@ -118,6 +118,8 @@ jobs:
               $status_value: String!
               $date_field: ID!
               $date_value: Date!
+              $triage_field: ID!
+              $triage_value: String!
             ) {
               set_status: updateProjectV2ItemFieldValue(input: {
                 projectId: $project
