@@ -15,10 +15,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # Sets environment variables for this step.
-      #
-      # Replace `YOUR_ORGANIZATION` with the name of your organization. For example, `octo-org`.
-      #
-      # Replace `YOUR_PROJECT_NUMBER` with your project number. To find the project number, look at the project URL. For example, `https://github.com/orgs/octo-org/projects/5` has a project number of 5.
       - name: Get project data
         env:
           GH_TOKEN: ${{ secrets.GTD_CLASSIC_PAT }}
@@ -53,17 +49,17 @@ jobs:
 
           # Parses the response from the API query and stores the relevant IDs as environment variables. Modify this to get the ID for different fields or options. For example:
           #
-          # - To get the ID of a field called `Team`, add `echo 'TEAM_FIELD_ID='$(jq '.data.organization.projectV2.fields.nodes[] | select(.name== "Team") | .id' project_data.json) >> $GITHUB_ENV`.
-          # - To get the ID of an option called `Octoteam` for the `Team` single select field, add `echo 'OCTOTEAM_OPTION_ID='$(jq '.data.organization.projectV2.fields.nodes[] | select(.name== "Team") |.options[] | select(.name=="Octoteam") |.id' project_data.json) >> $GITHUB_ENV`.
+          # - To get the ID of a field called `Team`, add `echo 'TEAM_FIELD_ID='$(jq '.data.user.projectV2.fields.nodes[] | select(.name== "Team") | .id' project_data.json) >> $GITHUB_ENV`.
+          # - To get the ID of an option called `Octoteam` for the `Team` single select field, add `echo 'OCTOTEAM_OPTION_ID='$(jq '.data.user.projectV2.fields.nodes[] | select(.name== "Team") |.options[] | select(.name=="Octoteam") |.id' project_data.json) >> $GITHUB_ENV`.
           #
           # **Note:** This workflow assumes that you have a project with a single select field called "Status" that includes an option called "Todo" and a date field called "Date posted". You must modify this section to match the fields that are present in your table.
 
-          echo 'PROJECT_ID='$(jq '.data.organization.projectV2.id' project_data.json) >> $GITHUB_ENV
-          echo 'DATE_FIELD_ID='$(jq '.data.organization.projectV2.fields.nodes[] | select(.name== "Start Date") | .id' project_data.json) >> $GITHUB_ENV
-          echo 'STATUS_FIELD_ID='$(jq '.data.organization.projectV2.fields.nodes[] | select(.name== "Status") | .id' project_data.json) >> $GITHUB_ENV
-          echo 'TODO_OPTION_ID='$(jq '.data.organization.projectV2.fields.nodes[] | select(.name== "Status") | .options[] | select(.name=="Todo") |.id' project_data.json) >> $GITHUB_ENV
-          echo 'TRIAGE_FIELD_ID='$(jq '.data.organization.projectV2.fields.nodes[] | select(.name== "Triage") | .id' project_data.json) >> $GITHUB_ENV
-          echo 'ACT_OPTION_ID='$(jq '.data.organization.projectV2.fields.nodes[] | select(.name== "Act") | .options[] | select(.name=="Act") |.id' project_data.json) >> $GITHUB_ENV
+          echo 'PROJECT_ID='$(jq '.data.user.projectV2.id' project_data.json) >> $GITHUB_ENV
+          echo 'DATE_FIELD_ID='$(jq '.data.user.projectV2.fields.nodes[] | select(.name== "Start Date") | .id' project_data.json) >> $GITHUB_ENV
+          echo 'STATUS_FIELD_ID='$(jq '.data.user.projectV2.fields.nodes[] | select(.name== "Status") | .id' project_data.json) >> $GITHUB_ENV
+          echo 'TODO_OPTION_ID='$(jq '.data.user.projectV2.fields.nodes[] | select(.name== "Status") | .options[] | select(.name=="Todo") |.id' project_data.json) >> $GITHUB_ENV
+          echo 'TRIAGE_FIELD_ID='$(jq '.data.user.projectV2.fields.nodes[] | select(.name== "Triage") | .id' project_data.json) >> $GITHUB_ENV
+          echo 'ACT_OPTION_ID='$(jq '.data.user.projectV2.fields.nodes[] | select(.name== "Act") | .options[] | select(.name=="Act") |.id' project_data.json) >> $GITHUB_ENV
 
 # Sets environment variables for this step. `GH_TOKEN` is the token generated in the first step. `PR_ID` is the ID of the pull request that triggered this workflow.
       - name: Add PR to project
