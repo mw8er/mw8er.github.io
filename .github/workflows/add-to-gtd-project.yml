@@ -59,7 +59,7 @@ jobs:
           echo 'STATUS_FIELD_ID='$(jq '.data.user.projectV2.fields.nodes[] | select(.name== "Status") | .id' project_data.json) >> $GITHUB_ENV
           echo 'TODO_OPTION_ID='$(jq '.data.user.projectV2.fields.nodes[] | select(.name== "Status") | .options[] | select(.name=="Todo") |.id' project_data.json) >> $GITHUB_ENV
           echo 'TRIAGE_FIELD_ID='$(jq '.data.user.projectV2.fields.nodes[] | select(.name== "Triage") | .id' project_data.json) >> $GITHUB_ENV
-          echo 'ACT_OPTION_ID='$(jq '.data.user.projectV2.fields.nodes[] | select(.name== "Act") | .options[] | select(.name=="Act") |.id' project_data.json) >> $GITHUB_ENV
+          echo 'ACT_OPTION_ID='$(jq '.data.user.projectV2.fields.nodes[] | select(.name== "Triage") | .options[] | select(.name=="Act") |.id' project_data.json) >> $GITHUB_ENV
 
 # Sets environment variables for this step. `GH_TOKEN` is the token generated in the first step. `PR_ID` is the ID of the pull request that triggered this workflow.
       - name: Add PR to project
