@@ -18,8 +18,6 @@ several Microsoft Cloud certifications which helps me making your cloud valuable
 
 ## Innovation Process Technology AG
 
-{{< figure src="/images/logo-ipt.webp" width="200" alt="ipt logo" class="left" >}}
-
 I’m working as *Principal Architect* at [Innovation Process Technology AG](https://ipt.ch) in Switzerland.
 
 We put our heart into your IT.
