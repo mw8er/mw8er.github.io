@@ -1,8 +1,8 @@
 <div class="w3-margin-bottom">
-<div class="w3-container w3-margin-bottom w3-card-4">
+<div class="w3-container w3-padding w3-card-4 w3-margin-bottom">
 {{ $activeTabClasses := ""}}
 {{ range $certification_group := .Site.Data.certifications }}
-  <button class="w3-bar-item w3-button tablink {{$activeTabClasses}}" onclick="openCertificationGroup(event, '{{ .name }}')"><i class="{{ .icon }}"></i> {{ .name }}</button>
+  <div class="w3-bar-item w3-button tablink {{$activeTabClasses}}" onclick="openCertificationGroup(event, '{{ .name }}')"><i class="{{ .icon }}"></i> {{ .name }}</div>
 {{ $activeTabClasses = ""}}
 {{ end }}
 </div>

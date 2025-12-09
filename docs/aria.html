@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Link Example</title>
+</head>
+<body>
+
+  <!-- Visible text is clear enough — no aria-label needed -->
+  <a href="https://example.com">Visit Example Website</a>
+
+  <br><br>
+
+  <!-- Icon-only link: needs aria-label for accessibility -->
+  <a href="https://twitter.com/example" aria-label="Visit our Twitter profile">
+    <img src="twitter-icon.png" alt="" width="24" height="24">
+  </a>
+
+  <br><br>
+
+  <!-- Link with additional context for screen readers -->
+  <a href="https://example.com/download" aria-label="Download the annual report in PDF format">
+    Download Report
+  </a>
+
+</body>
+</html>
