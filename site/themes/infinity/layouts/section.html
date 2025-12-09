@@ -2,16 +2,19 @@
   <h1>{{ .Title }}</h1>
   {{ .Content }}
   {{ $paginator := .Paginate .Pages }}
+<table class="w3-table w3-bordered w3-hoverable">
   {{ range $paginator.Pages }}
-    <section>
-    <div class="w3-panel w3-card-4">
-      <a href="{{ .RelPermalink }}">
-      <h2>{{ .LinkTitle }}</h2>
-      <p>{{ .Summary }}</p>
-      <p>{{ .Date | time.Format ":date_long" }}</p>
-      </a>
-    </div>
-    </section>
+    <tr class="w3-card">
+        <td style="vertical-align: middle;">
+            <h4><a href="{{ .RelPermalink }}">
+            {{ .Title }}</a>
+            </h4>
+      <p>{{ .Summary }}<br/>
+        
+        {{ .Date | time.Format ":date_long" }}</p>
+        </td>
+    </tr>
   {{ end }}
+</table>
 {{ partial "pagination.html" . }}
 {{ end }}
