@@ -3,10 +3,8 @@
 <head>
 {{ partial "head.html" . }}
 </head>
-<body class="w3-light-grey">
-<header class="w3-container w3-teal w3-center w3-margin-bottom">
-    {{ partial "header.html" . }}
-</header>
+<body class="light-theme">
+{{ partial "navigation.html" (dict "menuID" "main" "page" .) }}
 
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
@@ -25,7 +23,7 @@
     <!-- Right Column -->
     <div class="w3-twothird">
     
-      <div class="w3-container w3-card w3-white">
+      <div class="w3-container w3-card-4">
         {{ partial "breadcrumbs.html" . }}
         {{ block "main" . }}{{ end }}
       </div>
@@ -39,8 +37,6 @@
   <!-- End Page Container -->
 </div>
 
-<footer class="w3-container w3-teal w3-center w3-margin-top">
     {{ partial "footer.html" . }}
-</footer>
 </body>
 </html>
