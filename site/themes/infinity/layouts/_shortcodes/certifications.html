@@ -1,6 +1,6 @@
 <div class="w3-margin-bottom">
-<div class="w3-bar w3-teal" role="tablist">
-{{ $activeTabClasses := "w3-disabled w3-light-grey"}}
+<div class="w3-container w3-margin-bottom w3-card-4">
+{{ $activeTabClasses := ""}}
 {{ range $certification_group := .Site.Data.certifications }}
   <button class="w3-bar-item w3-button tablink {{$activeTabClasses}}" onclick="openCertificationGroup(event, '{{ .name }}')"><i class="{{ .icon }}"></i> {{ .name }}</button>
 {{ $activeTabClasses = ""}}
@@ -9,9 +9,9 @@
 
 {{ $display := "block"}}
 {{ range $certification_group := .Site.Data.certifications }}
-<div id="certification-group:{{ .name }}" class="certification-group" style="display:{{ $display }};" role="tabpanel">
+<div id="certification-group:{{ .name }}" class="certification-group" style="display:{{ $display }};">
 {{ $display = "none"}}
-<table class="w3-table w3-bordered w3-hoverable w3-white">
+<table class="w3-table w3-bordered w3-hoverable">
 {{ range $certification := .certifications }}
 {{ if ne $certification.href "" }}
     <tr class="w3-card">
@@ -27,7 +27,7 @@
         </td>
     </tr>
 {{ else }}
-    <tr class="w3-card w3-hover-none">
+    <tr class="w3-card">
         <td>
             <img src="{{ $certification.src }}" alt="{{ $certification.title }}" style="height:50px;">
         </td>
@@ -44,7 +44,7 @@
 
 <script>
 function openCertificationGroup(event, groupName) {
-  const activeElementClass = "w3-disabled w3-light-grey";
+  const activeElementClass = "";
   for (const element of document.getElementsByClassName("certification-group")) {
     if (element.id !== `certification-group:${groupName}`) {
         element.style.display = "none";

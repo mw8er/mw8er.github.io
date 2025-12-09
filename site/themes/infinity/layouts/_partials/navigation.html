@@ -6,22 +6,23 @@ Renders a menu for the given menu ID.
 
 @example: {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
 */}}
-
 {{- $page := .page }}
 {{- $menuID := .menuID }}
 
 {{- with index site.Menus $menuID }}
-      {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+<div class="w3-container w3-center w3-margin-bottom w3-card-4">
+{{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+</div>
 {{- end }}
 
 {{- define "_partials/inline/menu/walk.html" }}
   {{- $page := .page }}
   {{- range .menuEntries }}
-    {{- $attrs := dict "href" .URL "class" "w3-bar-item w3-button" }}
+    {{- $attrs := dict "href" .URL "class" "w3-bar-item w3-button w3-mobile" }}
     {{- if $page.IsMenuCurrent .Menu . }}
-      {{- $attrs = dict "class" "w3-bar-item w3-button w3-dark-grey w3-disabled w3-hover-none" "aria-current" "page" }}
+      {{- $attrs = dict "class" "w3-bar-item w3-button w3-mobile w3-disabled" "aria-current" "page" }}
     {{- else if $page.HasMenuCurrent .Menu .}}
-      {{- $attrs = merge $attrs (dict "class" "w3-bar-item w3-button w3-dark-grey" "aria-current" "true") }}
+      {{- $attrs = merge $attrs (dict "class" "w3-bar-item w3-button w3-mobile" "aria-current" "true") }}
     {{- end }}
     {{- $name := .Name }}
     {{- with .Identifier }}

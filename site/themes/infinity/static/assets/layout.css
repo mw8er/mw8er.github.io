@@ -391,12 +391,22 @@ a {
 .w3-btn:disabled,
 .w3-button:disabled {
     cursor: not-allowed;
-    opacity: 0.3
+    /* opacity: 0.3; */
+    box-shadow: none;
+    background-color: #fff !important;
+}
+
+.w3-button.w3-disabled:hover,
+.w3-button:disabled:hover {
+    cursor: not-allowed;
+    /* opacity: 0.3; */
+    box-shadow: none;
+    background-color: #fff !important;
 }
 
 .w3-disabled *,
 :disabled * {
-    pointer-events: none
+    pointer-events: none;
 }
 
 .w3-btn.w3-disabled:hover,

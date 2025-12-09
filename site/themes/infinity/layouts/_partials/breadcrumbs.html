@@ -1,7 +1,7 @@
-<div aria-label="Breadcrumb">
+<div>
 {{- range .Ancestors.Reverse }}
-<a href="{{ .RelPermalink }}" {{ if .IsHome }} aria-label="Home"{{ end }}>{{ if .IsHome }}<i class="fa-solid fa-house"></i>{{ else }}{{ .Title }}{{ end }}</a>
-<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+<a href="{{ .RelPermalink }}"{{ if .IsHome }} aria-label="Home"{{ end }}>{{ if .IsHome }}<i class="fa-solid fa-house"></i>{{ else }}{{ .Title }}{{ end }}</a>
+<i class="fa-solid fa-chevron-right"></i>
 {{- end }}
-<span aria-current="page"{{ if .IsHome }} aria-label="Home"{{ end }}>{{ if .IsHome }}<i class="fa-solid fa-house"></i>{{ else }}{{ .Title }}{{ end }}</span>
+<span>{{ if .IsHome }}<i class="fa-solid fa-house"></i>{{ else }}{{ .Title }}{{ end }}</span>
 </div>
