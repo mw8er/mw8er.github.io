@@ -5,7 +5,7 @@ name: Add Issue/PR to GTD project
 on:
   pull_request:
     types:
-      - ready_for_review
+      - opened
   issues:
     types:
       - opened
