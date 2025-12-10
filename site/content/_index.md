@@ -6,7 +6,7 @@ draft: false
 
 ## What is the meaning of *mw8er*?
 
-{{< figure src="/images/logo-mw8er.png" width="200" alt="mw8er logo" class="left" >}}
+{{< figure src="/images/logo-mw8er.png" width="200" alt="mw8er logo" class="left white-on-dark">}}
 
 - *m* is the first letter of my first name
 - *w8er* is derived from my last name. In german *8* is written *acht*, so *w8er = wachter*

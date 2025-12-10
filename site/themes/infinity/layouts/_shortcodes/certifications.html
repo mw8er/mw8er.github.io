@@ -11,7 +11,7 @@
 {{ range $certification_group := .Site.Data.certifications }}
 <div id="certification-group:{{ .name }}" class="certification-group" style="display:{{ $display }};">
 {{ $display = "none"}}
-<table class="w3-table w3-bordered w3-hoverable">
+<table class="w3-table w3-bordered">
 {{ range $certification := .certifications }}
 {{ if ne $certification.href "" }}
     <tr class="w3-card">
