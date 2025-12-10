@@ -10,7 +10,7 @@ Renders a menu for the given menu ID.
 {{- $menuID := .menuID }}
 
 {{- with index site.Menus $menuID }}
-<div class="w3-container w3-center w3-margin-bottom w3-padding w3-card-4">
+<div class="w3-container w3-center w3-margin-top w3-margin-bottom w3-padding w3-card-4">
 {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
 </div>
 {{- end }}

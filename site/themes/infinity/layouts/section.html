@@ -2,7 +2,7 @@
   <h1>{{ .Title }}</h1>
   {{ .Content }}
   {{ $paginator := .Paginate .Pages }}
-<table class="w3-table w3-bordered w3-hoverable">
+<table class="w3-table w3-bordered">
   {{ range $paginator.Pages }}
     <tr class="w3-card">
         <td style="vertical-align: middle;">

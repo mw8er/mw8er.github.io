@@ -5,9 +5,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
     <link rel="manifest" href="/favicon/site.webmanifest">
-    <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="/assets/layout.css">
-    <link rel="stylesheet" href="/assets/color.css">
+    <link rel="stylesheet" href="/assets/fontawesome/7.1.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/w3css/5/w3.css">
+    <link rel="stylesheet" href="/assets/infinity.css">
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex.min.css"
@@ -17,22 +17,5 @@
     <script type="module">
     import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
     mermaid.initialize({ startOnLoad: true });
-    </script>
-    <script>
-    function isDarkMode() {
-    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    }
-
-    function updateTheme() {
-    if (isDarkMode()) {
-        console.log("Switched to dark mode");
-    } else {
-        console.log("Switched to light mode");
-    }
-    }
-    // Initial theme setup
-    updateTheme();
-    // Listen for changes in color scheme preference
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateTheme);
     </script>
 </head>
