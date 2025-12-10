@@ -1,6 +1,6 @@
 <div class="w3-margin-bottom">
 <div class="w3-container w3-padding w3-card-4 w3-margin-bottom">
-{{ $activeTabClasses := ""}}
+{{ $activeTabClasses := "w3-disabled"}}
 {{ range $certification_group := .Site.Data.certifications }}
   <button type="button" class="w3-bar-item w3-button tablink {{$activeTabClasses}}" onclick="openCertificationGroup(event, '{{ .name }}')"><i class="{{ .icon }}"></i> {{ .name }}</button>
 {{ $activeTabClasses = ""}}
@@ -44,7 +44,7 @@
 
 <script>
 function openCertificationGroup(event, groupName) {
-  const activeElementClass = "";
+  const activeElementClass = "w3-disabled";
   for (const element of document.getElementsByClassName("certification-group")) {
     if (element.id !== `certification-group:${groupName}`) {
         element.style.display = "none";
