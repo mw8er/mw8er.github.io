@@ -2,19 +2,15 @@
 .w3-disabled,
 .w3-btn:disabled,
 .w3-button:disabled {
-    cursor: not-allowed;
-    /* opacity: 0.3; */
-    box-shadow: none;
-    background-color: #fff !important;
+  opacity: 1.0;
 }
 
 .w3-button.w3-disabled:hover,
 .w3-button:disabled:hover {
-    cursor: not-allowed;
-    /* opacity: 0.3; */
-    box-shadow: none;
-    background-color: #fff !important;
+  color: #000 !important;
+  background-color: #fff !important;
 }
+
 
 /* Color theme */
 .light-theme,
@@ -63,18 +59,12 @@
   .w3-disabled,
   .w3-btn:disabled,
   .w3-button:disabled {
-    cursor: not-allowed;
-    /* opacity: 0.3; */
-    box-shadow: none;
     color: #fff !important;
     background-color: #000 !important;
   }
 
   .w3-button.w3-disabled:hover,
   .w3-button:disabled:hover {
-    cursor: not-allowed;
-    /* opacity: 0.3; */
-    box-shadow: none;
     color: #fff !important;
     background-color: #000 !important;
   }
