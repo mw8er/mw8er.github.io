@@ -24,4 +24,4 @@ We put our heart into your IT.
 
 Looking for a partner who helps making your cloud valuable?
 
-[Feel free to contact me.](https://contacts.ipt.ch/public/74eb503e-d76e-404b-82d5-bb9612b59feb)
+[Feel free to contact me.](https://www.linkedin.com/in/mw8er)
