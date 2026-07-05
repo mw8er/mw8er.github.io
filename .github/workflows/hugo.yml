@@ -96,18 +96,16 @@ jobs:
           fi
 
       - name: Initialize Git submodules
+        if: hashFiles('.gitmodules') != ''
         run: |
-          if [[ -f .gitmodules ]]; then
-            echo "Initializing Git submodules..."
-            git submodule update --init --recursive
-          fi
+          echo "Initializing Git submodules..."
+          git submodule update --init --recursive
 
       - name: Install Node.js dependencies
+        if: hashFiles('package-lock.json') != ''
         run: |
-          if [[ -f package-lock.json ]]; then
-            echo "Installing Node.js dependencies..."
-            npm ci
-          fi
+          echo "Installing Node.js dependencies..."
+          npm ci
 
       - name: Cache restore
         id: cache-restore
